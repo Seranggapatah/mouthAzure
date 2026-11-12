@@ -1,0 +1,1815 @@
+<Rive version="1" kind="fragment">
+    <Artboard defaultStateMachineId="0:156" viewModelId="0:109" viewModelInstanceId="0:110" styleId="0:5" width="500" height="500" name="Main" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+
+        <Fill name="Background" id="0:161">
+            <SolidColor colorValue="FFF3C9A8" name="Color" id="0:162"/>
+        </Fill>
+
+        <Node x="250" y="250" scaleX="2" scaleY="2" name="Mulut" id="0:10">
+            <!-- first declared paints on top: teeth, tongue, then the mouth itself -->
+            <Node name="Dalam mulut" id="0:11">
+                <ClippingShape sourceId="0:108" name="Clip mulut" id="0:163"/>
+
+                <Node y="0" name="gigi atas" id="0:105">
+                    <Shape name="Sela gigi atas" id="0:164">
+                    <PointsPath name="Sela 1" id="0:165">
+                        <StraightVertex x="-50" y="0" id="0:166"/>
+                        <StraightVertex x="-50" y="-60" id="0:167"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 2" id="0:168">
+                        <StraightVertex x="-25" y="0" id="0:169"/>
+                        <StraightVertex x="-25" y="-60" id="0:170"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 3" id="0:171">
+                        <StraightVertex x="0" y="0" id="0:172"/>
+                        <StraightVertex x="0" y="-60" id="0:173"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 4" id="0:174">
+                        <StraightVertex x="25" y="0" id="0:175"/>
+                        <StraightVertex x="25" y="-60" id="0:176"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 5" id="0:177">
+                        <StraightVertex x="50" y="0" id="0:178"/>
+                        <StraightVertex x="50" y="-60" id="0:179"/>
+                    </PointsPath>
+                        <Stroke thickness="1.5" name="Stroke" id="0:180">
+                            <SolidColor colorValue="FFD9D2CF" name="Color" id="0:181"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape name="Gigi atas" id="0:182">
+                        <Rectangle width="150" height="60" originX="0.5" originY="1" cornerRadiusTL="6" cornerRadiusTR="6" cornerRadiusBL="6" cornerRadiusBR="6" name="Path" id="0:183"/>
+                        <Fill name="Fill" id="0:184">
+                            <SolidColor colorValue="FFFFFFFF" name="Color" id="0:185"/>
+                        </Fill>
+                    </Shape>
+                </Node>
+
+                <Node y="12" name="gigi bawah" id="0:106">
+                    <Shape name="Sela gigi bawah" id="0:186">
+                    <PointsPath name="Sela 1" id="0:187">
+                        <StraightVertex x="-42" y="0" id="0:188"/>
+                        <StraightVertex x="-42" y="60" id="0:189"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 2" id="0:190">
+                        <StraightVertex x="-21" y="0" id="0:191"/>
+                        <StraightVertex x="-21" y="60" id="0:192"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 3" id="0:193">
+                        <StraightVertex x="0" y="0" id="0:194"/>
+                        <StraightVertex x="0" y="60" id="0:195"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 4" id="0:196">
+                        <StraightVertex x="21" y="0" id="0:197"/>
+                        <StraightVertex x="21" y="60" id="0:198"/>
+                    </PointsPath>
+                    <PointsPath name="Sela 5" id="0:199">
+                        <StraightVertex x="42" y="0" id="0:200"/>
+                        <StraightVertex x="42" y="60" id="0:201"/>
+                    </PointsPath>
+                        <Stroke thickness="1.5" name="Stroke" id="0:202">
+                            <SolidColor colorValue="FFD9D2CF" name="Color" id="0:203"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape name="Gigi bawah" id="0:204">
+                        <Rectangle width="126" height="60" originX="0.5" originY="0" cornerRadiusTL="6" cornerRadiusTR="6" cornerRadiusBL="6" cornerRadiusBR="6" name="Path" id="0:205"/>
+                        <Fill name="Fill" id="0:206">
+                            <SolidColor colorValue="FFF4EFEC" name="Color" id="0:207"/>
+                        </Fill>
+                    </Shape>
+                </Node>
+
+                <Node y="49" scaleX="1" scaleY="1" name="lidah" id="0:107">
+                    <Shape name="Garis lidah" id="0:208">
+                        <PointsPath name="Path" id="0:209">
+                            <StraightVertex x="0" y="-26" id="0:210"/>
+                            <StraightVertex x="0" y="6" id="0:211"/>
+                        </PointsPath>
+                        <Stroke thickness="2.5" cap="round" name="Stroke" id="0:212">
+                            <SolidColor colorValue="FFD4566A" name="Color" id="0:213"/>
+                        </Stroke>
+                    </Shape>
+                    <Shape name="Lidah" id="0:214">
+                        <Ellipse width="104" height="70" name="Path" id="0:215"/>
+                        <Fill name="Fill" id="0:216">
+                            <SolidColor colorValue="FFF27B8C" name="Color" id="0:217"/>
+                        </Fill>
+                    </Shape>
+                </Node>
+            </Node>
+
+            <!-- paints inside one shape go last-declared-on-top:
+                 lips (thick stroke), mouth interior (fill), lip seam (thin stroke) -->
+            <Shape name="Bibir" id="0:108">
+                <PointsPath isClosed="true" isClockwise="true" name="Path" id="0:218">
+                    <CubicDetachedVertex x="-70" y="-5" inRotation="1.5708" inDistance="3.3" outRotation="-1.5708" outDistance="-3.3" name="Sudut kiri" id="0:101"/>
+                    <CubicMirroredVertex x="0" y="6" rotation="0" distance="38.5" name="Bibir atas" id="0:102"/>
+                    <CubicDetachedVertex x="70" y="-5" inRotation="-1.5708" inDistance="-3.3" outRotation="1.5708" outDistance="3.3" name="Sudut kanan" id="0:103"/>
+                    <CubicMirroredVertex x="0" y="6" rotation="3.1416" distance="38.5" name="Bibir bawah" id="0:104"/>
+                </PointsPath>
+                <Stroke thickness="15" cap="round" join="round" name="Bibir" id="0:219">
+                    <SolidColor colorValue="FFC8505F" name="Color" id="0:220"/>
+                </Stroke>
+                <Fill name="Rongga mulut" id="0:221">
+                    <SolidColor colorValue="FF521420" name="Color" id="0:222"/>
+                </Fill>
+                <Stroke thickness="2.5" cap="round" join="round" name="Garis bibir" id="0:223">
+                    <SolidColor colorValue="FF7A1F2E" name="Color" id="0:224"/>
+                </Stroke>
+            </Shape>
+        </Node>
+
+        <StateMachine name="State Machine 1" id="0:156">
+            <StateMachineLayer name="Visames" id="0:157">
+                <AnyState x="177" y="-338" id="0:225"/>
+                <ExitState x="257" y="-338" id="0:226"/>
+                <EntryState x="573" y="-63" id="0:227">
+                    <StateTransition stateToId="0:158" id="0:228"/>
+                </EntryState>
+                <AnimationState animationId="0:134" x="162" y="133" id="0:158">
+                    <StateTransition stateToId="0:159" duration="60" enableEarlyExit="true" id="0:229">
+                        <TransitionViewModelCondition id="0:230">
+                            <TransitionPropertyViewModelComparator id="0:231">
+                                <BindablePropertyBoolean id="0:232">
+                                    <DataBindContext sourcePathIds="0:109-0:111" propertyKey="634" id="0:233"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="true" id="0:234"/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <BlendStateDirect x="-189" y="-67" id="0:159">
+                    <BlendStateTransition stateToId="0:158" duration="120" enableEarlyExit="true" id="0:235">
+                        <TransitionViewModelCondition id="0:236">
+                            <TransitionPropertyViewModelComparator id="0:237">
+                                <BindablePropertyBoolean id="0:238">
+                                    <DataBindContext sourcePathIds="0:109-0:111" propertyKey="634" id="0:239"/>
+                                </BindablePropertyBoolean>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueBooleanComparator value="false" id="0:240"/>
+                        </TransitionViewModelCondition>
+                    </BlendStateTransition>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:134" id="0:241">
+                        <BindablePropertyNumber id="0:242">
+                            <DataBindContext sourcePathIds="0:109-0:112" propertyKey="636" id="0:243"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:135" id="0:244">
+                        <BindablePropertyNumber id="0:245">
+                            <DataBindContext sourcePathIds="0:109-0:113" propertyKey="636" id="0:246"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:136" id="0:247">
+                        <BindablePropertyNumber id="0:248">
+                            <DataBindContext sourcePathIds="0:109-0:114" propertyKey="636" id="0:249"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:137" id="0:250">
+                        <BindablePropertyNumber id="0:251">
+                            <DataBindContext sourcePathIds="0:109-0:115" propertyKey="636" id="0:252"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:138" id="0:253">
+                        <BindablePropertyNumber id="0:254">
+                            <DataBindContext sourcePathIds="0:109-0:116" propertyKey="636" id="0:255"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:139" id="0:256">
+                        <BindablePropertyNumber id="0:257">
+                            <DataBindContext sourcePathIds="0:109-0:117" propertyKey="636" id="0:258"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:140" id="0:259">
+                        <BindablePropertyNumber id="0:260">
+                            <DataBindContext sourcePathIds="0:109-0:118" propertyKey="636" id="0:261"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:141" id="0:262">
+                        <BindablePropertyNumber id="0:263">
+                            <DataBindContext sourcePathIds="0:109-0:119" propertyKey="636" id="0:264"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:142" id="0:265">
+                        <BindablePropertyNumber id="0:266">
+                            <DataBindContext sourcePathIds="0:109-0:120" propertyKey="636" id="0:267"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:143" id="0:268">
+                        <BindablePropertyNumber id="0:269">
+                            <DataBindContext sourcePathIds="0:109-0:121" propertyKey="636" id="0:270"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:144" id="0:271">
+                        <BindablePropertyNumber id="0:272">
+                            <DataBindContext sourcePathIds="0:109-0:122" propertyKey="636" id="0:273"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:145" id="0:274">
+                        <BindablePropertyNumber id="0:275">
+                            <DataBindContext sourcePathIds="0:109-0:123" propertyKey="636" id="0:276"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:146" id="0:277">
+                        <BindablePropertyNumber id="0:278">
+                            <DataBindContext sourcePathIds="0:109-0:124" propertyKey="636" id="0:279"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:147" id="0:280">
+                        <BindablePropertyNumber id="0:281">
+                            <DataBindContext sourcePathIds="0:109-0:125" propertyKey="636" id="0:282"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:148" id="0:283">
+                        <BindablePropertyNumber id="0:284">
+                            <DataBindContext sourcePathIds="0:109-0:126" propertyKey="636" id="0:285"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:149" id="0:286">
+                        <BindablePropertyNumber id="0:287">
+                            <DataBindContext sourcePathIds="0:109-0:127" propertyKey="636" id="0:288"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:150" id="0:289">
+                        <BindablePropertyNumber id="0:290">
+                            <DataBindContext sourcePathIds="0:109-0:128" propertyKey="636" id="0:291"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:151" id="0:292">
+                        <BindablePropertyNumber id="0:293">
+                            <DataBindContext sourcePathIds="0:109-0:129" propertyKey="636" id="0:294"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:152" id="0:295">
+                        <BindablePropertyNumber id="0:296">
+                            <DataBindContext sourcePathIds="0:109-0:130" propertyKey="636" id="0:297"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:153" id="0:298">
+                        <BindablePropertyNumber id="0:299">
+                            <DataBindContext sourcePathIds="0:109-0:131" propertyKey="636" id="0:300"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:154" id="0:301">
+                        <BindablePropertyNumber id="0:302">
+                            <DataBindContext sourcePathIds="0:109-0:132" propertyKey="636" id="0:303"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                    <BlendAnimationDirect blendSource="dataBindId" animationId="0:155" id="0:304">
+                        <BindablePropertyNumber id="0:305">
+                            <DataBindContext sourcePathIds="0:109-0:133" propertyKey="636" id="0:306"/>
+                        </BindablePropertyNumber>
+                    </BlendAnimationDirect>
+                </BlendStateDirect>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <!-- viseme 0: silence -->
+        <LinearAnimation name="0" folderId="0:160" id="0:134">
+            <KeyedObject objectId="0:101" id="0:307">
+                <KeyedProperty property="x" id="0:308">
+                    <KeyFrameDouble value="-70" interpolationType="linear" id="0:309"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:310">
+                    <KeyFrameDouble value="-5" interpolationType="linear" id="0:311"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:312">
+                    <KeyFrameDouble value="-3.3" interpolationType="linear" id="0:313"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:314">
+                    <KeyFrameDouble value="3.3" interpolationType="linear" id="0:315"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:316">
+                <KeyedProperty property="y" id="0:317">
+                    <KeyFrameDouble value="6" interpolationType="linear" id="0:318"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:319">
+                    <KeyFrameDouble value="38.5" interpolationType="linear" id="0:320"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:321">
+                <KeyedProperty property="x" id="0:322">
+                    <KeyFrameDouble value="70" interpolationType="linear" id="0:323"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:324">
+                    <KeyFrameDouble value="-5" interpolationType="linear" id="0:325"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:326">
+                    <KeyFrameDouble value="-3.3" interpolationType="linear" id="0:327"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:328">
+                    <KeyFrameDouble value="3.3" interpolationType="linear" id="0:329"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:330">
+                <KeyedProperty property="y" id="0:331">
+                    <KeyFrameDouble value="6" interpolationType="linear" id="0:332"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:333">
+                    <KeyFrameDouble value="38.5" interpolationType="linear" id="0:334"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:335">
+                <KeyedProperty property="y" id="0:336">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:337"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:338">
+                <KeyedProperty property="y" id="0:339">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:340"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:341">
+                <KeyedProperty property="y" id="0:342">
+                    <KeyFrameDouble value="49" interpolationType="linear" id="0:343"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:344">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:345"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:346">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:347"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 1: ae, schwa, uh -->
+        <LinearAnimation name="1" folderId="0:160" id="0:135">
+            <KeyedObject objectId="0:101" id="0:348">
+                <KeyedProperty property="x" id="0:349">
+                    <KeyFrameDouble value="-78" interpolationType="linear" id="0:350"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:351">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:352"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:353">
+                    <KeyFrameDouble value="7.04" interpolationType="linear" id="0:354"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:355">
+                    <KeyFrameDouble value="10.88" interpolationType="linear" id="0:356"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:357">
+                <KeyedProperty property="y" id="0:358">
+                    <KeyFrameDouble value="-22" interpolationType="linear" id="0:359"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:360">
+                    <KeyFrameDouble value="42.9" interpolationType="linear" id="0:361"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:362">
+                <KeyedProperty property="x" id="0:363">
+                    <KeyFrameDouble value="78" interpolationType="linear" id="0:364"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:365">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:366"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:367">
+                    <KeyFrameDouble value="7.04" interpolationType="linear" id="0:368"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:369">
+                    <KeyFrameDouble value="10.88" interpolationType="linear" id="0:370"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:371">
+                <KeyedProperty property="y" id="0:372">
+                    <KeyFrameDouble value="34" interpolationType="linear" id="0:373"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:374">
+                    <KeyFrameDouble value="42.9" interpolationType="linear" id="0:375"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:376">
+                <KeyedProperty property="y" id="0:377">
+                    <KeyFrameDouble value="-6" interpolationType="linear" id="0:378"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:379">
+                <KeyedProperty property="y" id="0:380">
+                    <KeyFrameDouble value="40" interpolationType="linear" id="0:381"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:382">
+                <KeyedProperty property="y" id="0:383">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:384"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:385">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:386"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:387">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:388"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 2: aa (father) -->
+        <LinearAnimation name="2" folderId="0:160" id="0:136">
+            <KeyedObject objectId="0:101" id="0:389">
+                <KeyedProperty property="x" id="0:390">
+                    <KeyFrameDouble value="-72" interpolationType="linear" id="0:391"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:392">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:393"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:394">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:395"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:396">
+                    <KeyFrameDouble value="22.4" interpolationType="linear" id="0:397"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:398">
+                <KeyedProperty property="y" id="0:399">
+                    <KeyFrameDouble value="-30" interpolationType="linear" id="0:400"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:401">
+                    <KeyFrameDouble value="39.6" interpolationType="linear" id="0:402"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:403">
+                <KeyedProperty property="x" id="0:404">
+                    <KeyFrameDouble value="72" interpolationType="linear" id="0:405"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:406">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:407"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:408">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:409"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:410">
+                    <KeyFrameDouble value="22.4" interpolationType="linear" id="0:411"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:412">
+                <KeyedProperty property="y" id="0:413">
+                    <KeyFrameDouble value="56" interpolationType="linear" id="0:414"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:415">
+                    <KeyFrameDouble value="39.6" interpolationType="linear" id="0:416"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:417">
+                <KeyedProperty property="y" id="0:418">
+                    <KeyFrameDouble value="-12" interpolationType="linear" id="0:419"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:420">
+                <KeyedProperty property="y" id="0:421">
+                    <KeyFrameDouble value="52" interpolationType="linear" id="0:422"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:423">
+                <KeyedProperty property="y" id="0:424">
+                    <KeyFrameDouble value="64" interpolationType="linear" id="0:425"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:426">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:427"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:428">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:429"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 3: ao (thought) -->
+        <LinearAnimation name="3" folderId="0:160" id="0:137">
+            <KeyedObject objectId="0:101" id="0:430">
+                <KeyedProperty property="x" id="0:431">
+                    <KeyFrameDouble value="-50" interpolationType="linear" id="0:432"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:433">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:434"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:435">
+                    <KeyFrameDouble value="15" interpolationType="linear" id="0:436"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:437">
+                    <KeyFrameDouble value="23" interpolationType="linear" id="0:438"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:439">
+                <KeyedProperty property="y" id="0:440">
+                    <KeyFrameDouble value="-30" interpolationType="linear" id="0:441"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:442">
+                    <KeyFrameDouble value="27.5" interpolationType="linear" id="0:443"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:444">
+                <KeyedProperty property="x" id="0:445">
+                    <KeyFrameDouble value="50" interpolationType="linear" id="0:446"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:447">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:448"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:449">
+                    <KeyFrameDouble value="15" interpolationType="linear" id="0:450"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:451">
+                    <KeyFrameDouble value="23" interpolationType="linear" id="0:452"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:453">
+                <KeyedProperty property="y" id="0:454">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:455"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:456">
+                    <KeyFrameDouble value="27.5" interpolationType="linear" id="0:457"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:458">
+                <KeyedProperty property="y" id="0:459">
+                    <KeyFrameDouble value="-18" interpolationType="linear" id="0:460"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:461">
+                <KeyedProperty property="y" id="0:462">
+                    <KeyFrameDouble value="52" interpolationType="linear" id="0:463"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:464">
+                <KeyedProperty property="y" id="0:465">
+                    <KeyFrameDouble value="58" interpolationType="linear" id="0:466"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:467">
+                    <KeyFrameDouble value="0.9" interpolationType="linear" id="0:468"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:469">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:470"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 4: eh, uh (book) -->
+        <LinearAnimation name="4" folderId="0:160" id="0:138">
+            <KeyedObject objectId="0:101" id="0:471">
+                <KeyedProperty property="x" id="0:472">
+                    <KeyFrameDouble value="-74" interpolationType="linear" id="0:473"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:474">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:475"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:476">
+                    <KeyFrameDouble value="5.12" interpolationType="linear" id="0:477"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:478">
+                    <KeyFrameDouble value="8.32" interpolationType="linear" id="0:479"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:480">
+                <KeyedProperty property="y" id="0:481">
+                    <KeyFrameDouble value="-18" interpolationType="linear" id="0:482"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:483">
+                    <KeyFrameDouble value="40.7" interpolationType="linear" id="0:484"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:485">
+                <KeyedProperty property="x" id="0:486">
+                    <KeyFrameDouble value="74" interpolationType="linear" id="0:487"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:488">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:489"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:490">
+                    <KeyFrameDouble value="5.12" interpolationType="linear" id="0:491"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:492">
+                    <KeyFrameDouble value="8.32" interpolationType="linear" id="0:493"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:494">
+                <KeyedProperty property="y" id="0:495">
+                    <KeyFrameDouble value="24" interpolationType="linear" id="0:496"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:497">
+                    <KeyFrameDouble value="40.7" interpolationType="linear" id="0:498"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:499">
+                <KeyedProperty property="y" id="0:500">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:501"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:502">
+                <KeyedProperty property="y" id="0:503">
+                    <KeyFrameDouble value="20" interpolationType="linear" id="0:504"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:505">
+                <KeyedProperty property="y" id="0:506">
+                    <KeyFrameDouble value="38" interpolationType="linear" id="0:507"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:508">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:509"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:510">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:511"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 5: er (bird) -->
+        <LinearAnimation name="5" folderId="0:160" id="0:139">
+            <KeyedObject objectId="0:101" id="0:512">
+                <KeyedProperty property="x" id="0:513">
+                    <KeyFrameDouble value="-52" interpolationType="linear" id="0:514"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:515">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:516"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:517">
+                    <KeyFrameDouble value="8.1" interpolationType="linear" id="0:518"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:519">
+                    <KeyFrameDouble value="9.9" interpolationType="linear" id="0:520"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:521">
+                <KeyedProperty property="y" id="0:522">
+                    <KeyFrameDouble value="-18" interpolationType="linear" id="0:523"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:524">
+                    <KeyFrameDouble value="28.6" interpolationType="linear" id="0:525"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:526">
+                <KeyedProperty property="x" id="0:527">
+                    <KeyFrameDouble value="52" interpolationType="linear" id="0:528"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:529">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:530"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:531">
+                    <KeyFrameDouble value="8.1" interpolationType="linear" id="0:532"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:533">
+                    <KeyFrameDouble value="9.9" interpolationType="linear" id="0:534"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:535">
+                <KeyedProperty property="y" id="0:536">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:537"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:538">
+                    <KeyFrameDouble value="28.6" interpolationType="linear" id="0:539"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:540">
+                <KeyedProperty property="y" id="0:541">
+                    <KeyFrameDouble value="-6" interpolationType="linear" id="0:542"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:543">
+                <KeyedProperty property="y" id="0:544">
+                    <KeyFrameDouble value="18" interpolationType="linear" id="0:545"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:546">
+                <KeyedProperty property="y" id="0:547">
+                    <KeyFrameDouble value="30" interpolationType="linear" id="0:548"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:549">
+                    <KeyFrameDouble value="0.85" interpolationType="linear" id="0:550"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:551">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:552"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 6: y, ee, ih -->
+        <LinearAnimation name="6" folderId="0:160" id="0:140">
+            <KeyedObject objectId="0:101" id="0:553">
+                <KeyedProperty property="x" id="0:554">
+                    <KeyFrameDouble value="-90" interpolationType="linear" id="0:555"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:556">
+                    <KeyFrameDouble value="-8" interpolationType="linear" id="0:557"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:558">
+                    <KeyFrameDouble value="1.68" interpolationType="linear" id="0:559"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:560">
+                    <KeyFrameDouble value="6.16" interpolationType="linear" id="0:561"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:562">
+                <KeyedProperty property="y" id="0:563">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:564"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:565">
+                    <KeyFrameDouble value="49.5" interpolationType="linear" id="0:566"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:567">
+                <KeyedProperty property="x" id="0:568">
+                    <KeyFrameDouble value="90" interpolationType="linear" id="0:569"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:570">
+                    <KeyFrameDouble value="-8" interpolationType="linear" id="0:571"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:572">
+                    <KeyFrameDouble value="1.68" interpolationType="linear" id="0:573"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:574">
+                    <KeyFrameDouble value="6.16" interpolationType="linear" id="0:575"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:576">
+                <KeyedProperty property="y" id="0:577">
+                    <KeyFrameDouble value="14" interpolationType="linear" id="0:578"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:579">
+                    <KeyFrameDouble value="49.5" interpolationType="linear" id="0:580"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:581">
+                <KeyedProperty property="y" id="0:582">
+                    <KeyFrameDouble value="-1" interpolationType="linear" id="0:583"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:584">
+                <KeyedProperty property="y" id="0:585">
+                    <KeyFrameDouble value="3" interpolationType="linear" id="0:586"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:587">
+                <KeyedProperty property="y" id="0:588">
+                    <KeyFrameDouble value="57" interpolationType="linear" id="0:589"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:590">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:591"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:592">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:593"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 7: w, oo -->
+        <LinearAnimation name="7" folderId="0:160" id="0:141">
+            <KeyedObject objectId="0:101" id="0:594">
+                <KeyedProperty property="x" id="0:595">
+                    <KeyFrameDouble value="-24" interpolationType="linear" id="0:596"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:597">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:598"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:599">
+                    <KeyFrameDouble value="7.7" interpolationType="linear" id="0:600"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:601">
+                    <KeyFrameDouble value="7.7" interpolationType="linear" id="0:602"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:603">
+                <KeyedProperty property="y" id="0:604">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:605"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:606">
+                    <KeyFrameDouble value="13.2" interpolationType="linear" id="0:607"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:608">
+                <KeyedProperty property="x" id="0:609">
+                    <KeyFrameDouble value="24" interpolationType="linear" id="0:610"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:611">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:612"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:613">
+                    <KeyFrameDouble value="7.7" interpolationType="linear" id="0:614"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:615">
+                    <KeyFrameDouble value="7.7" interpolationType="linear" id="0:616"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:617">
+                <KeyedProperty property="y" id="0:618">
+                    <KeyFrameDouble value="14" interpolationType="linear" id="0:619"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:620">
+                    <KeyFrameDouble value="13.2" interpolationType="linear" id="0:621"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:622">
+                <KeyedProperty property="y" id="0:623">
+                    <KeyFrameDouble value="-20" interpolationType="linear" id="0:624"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:625">
+                <KeyedProperty property="y" id="0:626">
+                    <KeyFrameDouble value="20" interpolationType="linear" id="0:627"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:628">
+                <KeyedProperty property="y" id="0:629">
+                    <KeyFrameDouble value="57" interpolationType="linear" id="0:630"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:631">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:632"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:633">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:634"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 8: oh -->
+        <LinearAnimation name="8" folderId="0:160" id="0:142">
+            <KeyedObject objectId="0:101" id="0:635">
+                <KeyedProperty property="x" id="0:636">
+                    <KeyFrameDouble value="-38" interpolationType="linear" id="0:637"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:638">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:639"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:640">
+                    <KeyFrameDouble value="14.3" interpolationType="linear" id="0:641"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:642">
+                    <KeyFrameDouble value="16.5" interpolationType="linear" id="0:643"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:644">
+                <KeyedProperty property="y" id="0:645">
+                    <KeyFrameDouble value="-26" interpolationType="linear" id="0:646"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:647">
+                    <KeyFrameDouble value="20.9" interpolationType="linear" id="0:648"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:649">
+                <KeyedProperty property="x" id="0:650">
+                    <KeyFrameDouble value="38" interpolationType="linear" id="0:651"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:652">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:653"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:654">
+                    <KeyFrameDouble value="14.3" interpolationType="linear" id="0:655"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:656">
+                    <KeyFrameDouble value="16.5" interpolationType="linear" id="0:657"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:658">
+                <KeyedProperty property="y" id="0:659">
+                    <KeyFrameDouble value="30" interpolationType="linear" id="0:660"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:661">
+                    <KeyFrameDouble value="20.9" interpolationType="linear" id="0:662"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:663">
+                <KeyedProperty property="y" id="0:664">
+                    <KeyFrameDouble value="-20" interpolationType="linear" id="0:665"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:666">
+                <KeyedProperty property="y" id="0:667">
+                    <KeyFrameDouble value="36" interpolationType="linear" id="0:668"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:669">
+                <KeyedProperty property="y" id="0:670">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:671"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:672">
+                    <KeyFrameDouble value="0.7" interpolationType="linear" id="0:673"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:674">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:675"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 9: ow (how) -->
+        <LinearAnimation name="9" folderId="0:160" id="0:143">
+            <KeyedObject objectId="0:101" id="0:676">
+                <KeyedProperty property="x" id="0:677">
+                    <KeyFrameDouble value="-64" interpolationType="linear" id="0:678"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:679">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:680"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:681">
+                    <KeyFrameDouble value="12.6" interpolationType="linear" id="0:682"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:683">
+                    <KeyFrameDouble value="20.7" interpolationType="linear" id="0:684"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:685">
+                <KeyedProperty property="y" id="0:686">
+                    <KeyFrameDouble value="-28" interpolationType="linear" id="0:687"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:688">
+                    <KeyFrameDouble value="35.2" interpolationType="linear" id="0:689"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:690">
+                <KeyedProperty property="x" id="0:691">
+                    <KeyFrameDouble value="64" interpolationType="linear" id="0:692"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:693">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:694"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:695">
+                    <KeyFrameDouble value="12.6" interpolationType="linear" id="0:696"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:697">
+                    <KeyFrameDouble value="20.7" interpolationType="linear" id="0:698"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:699">
+                <KeyedProperty property="y" id="0:700">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:701"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:702">
+                    <KeyFrameDouble value="35.2" interpolationType="linear" id="0:703"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:704">
+                <KeyedProperty property="y" id="0:705">
+                    <KeyFrameDouble value="-12" interpolationType="linear" id="0:706"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:707">
+                <KeyedProperty property="y" id="0:708">
+                    <KeyFrameDouble value="52" interpolationType="linear" id="0:709"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:710">
+                <KeyedProperty property="y" id="0:711">
+                    <KeyFrameDouble value="56" interpolationType="linear" id="0:712"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:713">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:714"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:715">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:716"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 10: oy (boy) -->
+        <LinearAnimation name="10" folderId="0:160" id="0:144">
+            <KeyedObject objectId="0:101" id="0:717">
+                <KeyedProperty property="x" id="0:718">
+                    <KeyFrameDouble value="-56" interpolationType="linear" id="0:719"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:720">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:721"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:722">
+                    <KeyFrameDouble value="11" interpolationType="linear" id="0:723"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:724">
+                    <KeyFrameDouble value="18" interpolationType="linear" id="0:725"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:726">
+                <KeyedProperty property="y" id="0:727">
+                    <KeyFrameDouble value="-22" interpolationType="linear" id="0:728"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:729">
+                    <KeyFrameDouble value="30.8" interpolationType="linear" id="0:730"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:731">
+                <KeyedProperty property="x" id="0:732">
+                    <KeyFrameDouble value="56" interpolationType="linear" id="0:733"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:734">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:735"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:736">
+                    <KeyFrameDouble value="11" interpolationType="linear" id="0:737"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:738">
+                    <KeyFrameDouble value="18" interpolationType="linear" id="0:739"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:740">
+                <KeyedProperty property="y" id="0:741">
+                    <KeyFrameDouble value="36" interpolationType="linear" id="0:742"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:743">
+                    <KeyFrameDouble value="30.8" interpolationType="linear" id="0:744"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:745">
+                <KeyedProperty property="y" id="0:746">
+                    <KeyFrameDouble value="-10" interpolationType="linear" id="0:747"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:748">
+                <KeyedProperty property="y" id="0:749">
+                    <KeyFrameDouble value="42" interpolationType="linear" id="0:750"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:751">
+                <KeyedProperty property="y" id="0:752">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:753"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:754">
+                    <KeyFrameDouble value="0.9" interpolationType="linear" id="0:755"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:756">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:757"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 11: ai (my) -->
+        <LinearAnimation name="11" folderId="0:160" id="0:145">
+            <KeyedObject objectId="0:101" id="0:758">
+                <KeyedProperty property="x" id="0:759">
+                    <KeyFrameDouble value="-82" interpolationType="linear" id="0:760"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:761">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:762"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:763">
+                    <KeyFrameDouble value="8.16" interpolationType="linear" id="0:764"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:765">
+                    <KeyFrameDouble value="15.64" interpolationType="linear" id="0:766"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:767">
+                <KeyedProperty property="y" id="0:768">
+                    <KeyFrameDouble value="-26" interpolationType="linear" id="0:769"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:770">
+                    <KeyFrameDouble value="45.1" interpolationType="linear" id="0:771"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:772">
+                <KeyedProperty property="x" id="0:773">
+                    <KeyFrameDouble value="82" interpolationType="linear" id="0:774"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:775">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:776"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:777">
+                    <KeyFrameDouble value="8.16" interpolationType="linear" id="0:778"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:779">
+                    <KeyFrameDouble value="15.64" interpolationType="linear" id="0:780"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:781">
+                <KeyedProperty property="y" id="0:782">
+                    <KeyFrameDouble value="44" interpolationType="linear" id="0:783"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:784">
+                    <KeyFrameDouble value="45.1" interpolationType="linear" id="0:785"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:786">
+                <KeyedProperty property="y" id="0:787">
+                    <KeyFrameDouble value="-8" interpolationType="linear" id="0:788"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:789">
+                <KeyedProperty property="y" id="0:790">
+                    <KeyFrameDouble value="40" interpolationType="linear" id="0:791"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:792">
+                <KeyedProperty property="y" id="0:793">
+                    <KeyFrameDouble value="52" interpolationType="linear" id="0:794"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:795">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:796"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:797">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:798"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 12: h -->
+        <LinearAnimation name="12" folderId="0:160" id="0:146">
+            <KeyedObject objectId="0:101" id="0:799">
+                <KeyedProperty property="x" id="0:800">
+                    <KeyFrameDouble value="-66" interpolationType="linear" id="0:801"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:802">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:803"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:804">
+                    <KeyFrameDouble value="4.76" interpolationType="linear" id="0:805"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:806">
+                    <KeyFrameDouble value="7.48" interpolationType="linear" id="0:807"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:808">
+                <KeyedProperty property="y" id="0:809">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:810"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:811">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:812"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:813">
+                <KeyedProperty property="x" id="0:814">
+                    <KeyFrameDouble value="66" interpolationType="linear" id="0:815"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:816">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:817"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:818">
+                    <KeyFrameDouble value="4.76" interpolationType="linear" id="0:819"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:820">
+                    <KeyFrameDouble value="7.48" interpolationType="linear" id="0:821"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:822">
+                <KeyedProperty property="y" id="0:823">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:824"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:825">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:826"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:827">
+                <KeyedProperty property="y" id="0:828">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:829"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:830">
+                <KeyedProperty property="y" id="0:831">
+                    <KeyFrameDouble value="28" interpolationType="linear" id="0:832"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:833">
+                <KeyedProperty property="y" id="0:834">
+                    <KeyFrameDouble value="36" interpolationType="linear" id="0:835"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:836">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:837"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:838">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:839"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 13: r -->
+        <LinearAnimation name="13" folderId="0:160" id="0:147">
+            <KeyedObject objectId="0:101" id="0:840">
+                <KeyedProperty property="x" id="0:841">
+                    <KeyFrameDouble value="-40" interpolationType="linear" id="0:842"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:843">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:844"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:845">
+                    <KeyFrameDouble value="7" interpolationType="linear" id="0:846"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:847">
+                    <KeyFrameDouble value="8" interpolationType="linear" id="0:848"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:849">
+                <KeyedProperty property="y" id="0:850">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:851"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:852">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:853"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:854">
+                <KeyedProperty property="x" id="0:855">
+                    <KeyFrameDouble value="40" interpolationType="linear" id="0:856"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:857">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:858"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:859">
+                    <KeyFrameDouble value="7" interpolationType="linear" id="0:860"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:861">
+                    <KeyFrameDouble value="8" interpolationType="linear" id="0:862"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:863">
+                <KeyedProperty property="y" id="0:864">
+                    <KeyFrameDouble value="16" interpolationType="linear" id="0:865"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:866">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:867"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:868">
+                <KeyedProperty property="y" id="0:869">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:870"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:871">
+                <KeyedProperty property="y" id="0:872">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:873"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:874">
+                <KeyedProperty property="y" id="0:875">
+                    <KeyFrameDouble value="28" interpolationType="linear" id="0:876"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:877">
+                    <KeyFrameDouble value="0.7" interpolationType="linear" id="0:878"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:879">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:880"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 14: l -->
+        <LinearAnimation name="14" folderId="0:160" id="0:148">
+            <KeyedObject objectId="0:101" id="0:881">
+                <KeyedProperty property="x" id="0:882">
+                    <KeyFrameDouble value="-66" interpolationType="linear" id="0:883"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:884">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:885"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:886">
+                    <KeyFrameDouble value="7.48" interpolationType="linear" id="0:887"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:888">
+                    <KeyFrameDouble value="10.2" interpolationType="linear" id="0:889"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:890">
+                <KeyedProperty property="y" id="0:891">
+                    <KeyFrameDouble value="-22" interpolationType="linear" id="0:892"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:893">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:894"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:895">
+                <KeyedProperty property="x" id="0:896">
+                    <KeyFrameDouble value="66" interpolationType="linear" id="0:897"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:898">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:899"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:900">
+                    <KeyFrameDouble value="7.48" interpolationType="linear" id="0:901"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:902">
+                    <KeyFrameDouble value="10.2" interpolationType="linear" id="0:903"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:904">
+                <KeyedProperty property="y" id="0:905">
+                    <KeyFrameDouble value="30" interpolationType="linear" id="0:906"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:907">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:908"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:909">
+                <KeyedProperty property="y" id="0:910">
+                    <KeyFrameDouble value="-6" interpolationType="linear" id="0:911"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:912">
+                <KeyedProperty property="y" id="0:913">
+                    <KeyFrameDouble value="36" interpolationType="linear" id="0:914"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:915">
+                <KeyedProperty property="y" id="0:916">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:917"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:918">
+                    <KeyFrameDouble value="0.5" interpolationType="linear" id="0:919"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:920">
+                    <KeyFrameDouble value="0.95" interpolationType="linear" id="0:921"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 15: s, z -->
+        <LinearAnimation name="15" folderId="0:160" id="0:149">
+            <KeyedObject objectId="0:101" id="0:922">
+                <KeyedProperty property="x" id="0:923">
+                    <KeyFrameDouble value="-80" interpolationType="linear" id="0:924"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:925">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:926"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:927">
+                    <KeyFrameDouble value="2.24" interpolationType="linear" id="0:928"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:929">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:930"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:931">
+                <KeyedProperty property="y" id="0:932">
+                    <KeyFrameDouble value="-12" interpolationType="linear" id="0:933"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:934">
+                    <KeyFrameDouble value="44" interpolationType="linear" id="0:935"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:936">
+                <KeyedProperty property="x" id="0:937">
+                    <KeyFrameDouble value="80" interpolationType="linear" id="0:938"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:939">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:940"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:941">
+                    <KeyFrameDouble value="2.24" interpolationType="linear" id="0:942"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:943">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:944"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:945">
+                <KeyedProperty property="y" id="0:946">
+                    <KeyFrameDouble value="12" interpolationType="linear" id="0:947"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:948">
+                    <KeyFrameDouble value="44" interpolationType="linear" id="0:949"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:950">
+                <KeyedProperty property="y" id="0:951">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:952"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:953">
+                <KeyedProperty property="y" id="0:954">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:955"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:956">
+                <KeyedProperty property="y" id="0:957">
+                    <KeyFrameDouble value="55" interpolationType="linear" id="0:958"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:959">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:960"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:961">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:962"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 16: sh, ch, j, zh -->
+        <LinearAnimation name="16" folderId="0:160" id="0:150">
+            <KeyedObject objectId="0:101" id="0:963">
+                <KeyedProperty property="x" id="0:964">
+                    <KeyFrameDouble value="-46" interpolationType="linear" id="0:965"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:966">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:967"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:968">
+                    <KeyFrameDouble value="9" interpolationType="linear" id="0:969"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:970">
+                    <KeyFrameDouble value="9" interpolationType="linear" id="0:971"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:972">
+                <KeyedProperty property="y" id="0:973">
+                    <KeyFrameDouble value="-18" interpolationType="linear" id="0:974"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:975">
+                    <KeyFrameDouble value="25.3" interpolationType="linear" id="0:976"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:977">
+                <KeyedProperty property="x" id="0:978">
+                    <KeyFrameDouble value="46" interpolationType="linear" id="0:979"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:980">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:981"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:982">
+                    <KeyFrameDouble value="9" interpolationType="linear" id="0:983"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:984">
+                    <KeyFrameDouble value="9" interpolationType="linear" id="0:985"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:986">
+                <KeyedProperty property="y" id="0:987">
+                    <KeyFrameDouble value="18" interpolationType="linear" id="0:988"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:989">
+                    <KeyFrameDouble value="25.3" interpolationType="linear" id="0:990"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:991">
+                <KeyedProperty property="y" id="0:992">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:993"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:994">
+                <KeyedProperty property="y" id="0:995">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:996"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:997">
+                <KeyedProperty property="y" id="0:998">
+                    <KeyFrameDouble value="61" interpolationType="linear" id="0:999"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1000">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1001"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1002">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1003"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 17: th (this) -->
+        <LinearAnimation name="17" folderId="0:160" id="0:151">
+            <KeyedObject objectId="0:101" id="0:1004">
+                <KeyedProperty property="x" id="0:1005">
+                    <KeyFrameDouble value="-68" interpolationType="linear" id="0:1006"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1007">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1008"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1009">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:1010"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1011">
+                    <KeyFrameDouble value="5.76" interpolationType="linear" id="0:1012"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:1013">
+                <KeyedProperty property="y" id="0:1014">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:1015"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1016">
+                    <KeyFrameDouble value="37.4" interpolationType="linear" id="0:1017"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:1018">
+                <KeyedProperty property="x" id="0:1019">
+                    <KeyFrameDouble value="68" interpolationType="linear" id="0:1020"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1021">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1022"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1023">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:1024"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1025">
+                    <KeyFrameDouble value="5.76" interpolationType="linear" id="0:1026"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:1027">
+                <KeyedProperty property="y" id="0:1028">
+                    <KeyFrameDouble value="18" interpolationType="linear" id="0:1029"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1030">
+                    <KeyFrameDouble value="37.4" interpolationType="linear" id="0:1031"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:1032">
+                <KeyedProperty property="y" id="0:1033">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:1034"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:1035">
+                <KeyedProperty property="y" id="0:1036">
+                    <KeyFrameDouble value="24" interpolationType="linear" id="0:1037"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:1038">
+                <KeyedProperty property="y" id="0:1039">
+                    <KeyFrameDouble value="16" interpolationType="linear" id="0:1040"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1041">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1042"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1043">
+                    <KeyFrameDouble value="0.55" interpolationType="linear" id="0:1044"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 18: f, v -->
+        <LinearAnimation name="18" folderId="0:160" id="0:152">
+            <KeyedObject objectId="0:101" id="0:1045">
+                <KeyedProperty property="x" id="0:1046">
+                    <KeyFrameDouble value="-66" interpolationType="linear" id="0:1047"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1048">
+                    <KeyFrameDouble value="2" interpolationType="linear" id="0:1049"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1050">
+                    <KeyFrameDouble value="4.8" interpolationType="linear" id="0:1051"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1052">
+                    <KeyFrameDouble value="0.9" interpolationType="linear" id="0:1053"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:1054">
+                <KeyedProperty property="y" id="0:1055">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:1056"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1057">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:1058"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:1059">
+                <KeyedProperty property="x" id="0:1060">
+                    <KeyFrameDouble value="66" interpolationType="linear" id="0:1061"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1062">
+                    <KeyFrameDouble value="2" interpolationType="linear" id="0:1063"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1064">
+                    <KeyFrameDouble value="4.8" interpolationType="linear" id="0:1065"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1066">
+                    <KeyFrameDouble value="0.9" interpolationType="linear" id="0:1067"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:1068">
+                <KeyedProperty property="y" id="0:1069">
+                    <KeyFrameDouble value="5" interpolationType="linear" id="0:1070"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1071">
+                    <KeyFrameDouble value="36.3" interpolationType="linear" id="0:1072"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:1073">
+                <KeyedProperty property="y" id="0:1074">
+                    <KeyFrameDouble value="3" interpolationType="linear" id="0:1075"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:1076">
+                <KeyedProperty property="y" id="0:1077">
+                    <KeyFrameDouble value="11" interpolationType="linear" id="0:1078"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:1079">
+                <KeyedProperty property="y" id="0:1080">
+                    <KeyFrameDouble value="48" interpolationType="linear" id="0:1081"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1082">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1083"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1084">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1085"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 19: d, t, n, th -->
+        <LinearAnimation name="19" folderId="0:160" id="0:153">
+            <KeyedObject objectId="0:101" id="0:1086">
+                <KeyedProperty property="x" id="0:1087">
+                    <KeyFrameDouble value="-70" interpolationType="linear" id="0:1088"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1089">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1090"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1091">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:1092"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1093">
+                    <KeyFrameDouble value="5.12" interpolationType="linear" id="0:1094"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:1095">
+                <KeyedProperty property="y" id="0:1096">
+                    <KeyFrameDouble value="-14" interpolationType="linear" id="0:1097"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1098">
+                    <KeyFrameDouble value="38.5" interpolationType="linear" id="0:1099"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:1100">
+                <KeyedProperty property="x" id="0:1101">
+                    <KeyFrameDouble value="70" interpolationType="linear" id="0:1102"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1103">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1104"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1105">
+                    <KeyFrameDouble value="4.48" interpolationType="linear" id="0:1106"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1107">
+                    <KeyFrameDouble value="5.12" interpolationType="linear" id="0:1108"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:1109">
+                <KeyedProperty property="y" id="0:1110">
+                    <KeyFrameDouble value="16" interpolationType="linear" id="0:1111"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1112">
+                    <KeyFrameDouble value="38.5" interpolationType="linear" id="0:1113"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:1114">
+                <KeyedProperty property="y" id="0:1115">
+                    <KeyFrameDouble value="-2" interpolationType="linear" id="0:1116"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:1117">
+                <KeyedProperty property="y" id="0:1118">
+                    <KeyFrameDouble value="11" interpolationType="linear" id="0:1119"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:1120">
+                <KeyedProperty property="y" id="0:1121">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:1122"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1123">
+                    <KeyFrameDouble value="0.8" interpolationType="linear" id="0:1124"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1125">
+                    <KeyFrameDouble value="0.7" interpolationType="linear" id="0:1126"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 20: k, g, ng -->
+        <LinearAnimation name="20" folderId="0:160" id="0:154">
+            <KeyedObject objectId="0:101" id="0:1127">
+                <KeyedProperty property="x" id="0:1128">
+                    <KeyFrameDouble value="-64" interpolationType="linear" id="0:1129"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1130">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1131"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1132">
+                    <KeyFrameDouble value="5.44" interpolationType="linear" id="0:1133"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1134">
+                    <KeyFrameDouble value="8.16" interpolationType="linear" id="0:1135"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:1136">
+                <KeyedProperty property="y" id="0:1137">
+                    <KeyFrameDouble value="-16" interpolationType="linear" id="0:1138"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1139">
+                    <KeyFrameDouble value="35.2" interpolationType="linear" id="0:1140"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:1141">
+                <KeyedProperty property="x" id="0:1142">
+                    <KeyFrameDouble value="64" interpolationType="linear" id="0:1143"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1144">
+                    <KeyFrameDouble value="0" interpolationType="linear" id="0:1145"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1146">
+                    <KeyFrameDouble value="5.44" interpolationType="linear" id="0:1147"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1148">
+                    <KeyFrameDouble value="8.16" interpolationType="linear" id="0:1149"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:1150">
+                <KeyedProperty property="y" id="0:1151">
+                    <KeyFrameDouble value="24" interpolationType="linear" id="0:1152"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1153">
+                    <KeyFrameDouble value="35.2" interpolationType="linear" id="0:1154"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:1155">
+                <KeyedProperty property="y" id="0:1156">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:1157"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:1158">
+                <KeyedProperty property="y" id="0:1159">
+                    <KeyFrameDouble value="22" interpolationType="linear" id="0:1160"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:1161">
+                <KeyedProperty property="y" id="0:1162">
+                    <KeyFrameDouble value="38" interpolationType="linear" id="0:1163"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1164">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1165"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1166">
+                    <KeyFrameDouble value="1.1" interpolationType="linear" id="0:1167"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <!-- viseme 21: p, b, m -->
+        <LinearAnimation name="21" folderId="0:160" id="0:155">
+            <KeyedObject objectId="0:101" id="0:1168">
+                <KeyedProperty property="x" id="0:1169">
+                    <KeyFrameDouble value="-62" interpolationType="linear" id="0:1170"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1171">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1172"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1173">
+                    <KeyFrameDouble value="-0.3" interpolationType="linear" id="0:1174"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1175">
+                    <KeyFrameDouble value="0.3" interpolationType="linear" id="0:1176"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:102" id="0:1177">
+                <KeyedProperty property="y" id="0:1178">
+                    <KeyFrameDouble value="2" interpolationType="linear" id="0:1179"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1180">
+                    <KeyFrameDouble value="34.1" interpolationType="linear" id="0:1181"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:103" id="0:1182">
+                <KeyedProperty property="x" id="0:1183">
+                    <KeyFrameDouble value="62" interpolationType="linear" id="0:1184"/>
+                </KeyedProperty>
+                <KeyedProperty property="y" id="0:1185">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1186"/>
+                </KeyedProperty>
+                <KeyedProperty property="inDistance" id="0:1187">
+                    <KeyFrameDouble value="-0.3" interpolationType="linear" id="0:1188"/>
+                </KeyedProperty>
+                <KeyedProperty property="outDistance" id="0:1189">
+                    <KeyFrameDouble value="0.3" interpolationType="linear" id="0:1190"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:104" id="0:1191">
+                <KeyedProperty property="y" id="0:1192">
+                    <KeyFrameDouble value="2" interpolationType="linear" id="0:1193"/>
+                </KeyedProperty>
+                <KeyedProperty property="distance" id="0:1194">
+                    <KeyFrameDouble value="34.1" interpolationType="linear" id="0:1195"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:105" id="0:1196">
+                <KeyedProperty property="y" id="0:1197">
+                    <KeyFrameDouble value="-4" interpolationType="linear" id="0:1198"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:106" id="0:1199">
+                <KeyedProperty property="y" id="0:1200">
+                    <KeyFrameDouble value="8" interpolationType="linear" id="0:1201"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:107" id="0:1202">
+                <KeyedProperty property="y" id="0:1203">
+                    <KeyFrameDouble value="45" interpolationType="linear" id="0:1204"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX" id="0:1205">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1206"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY" id="0:1207">
+                    <KeyFrameDouble value="1" interpolationType="linear" id="0:1208"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <AnimationFolder name="Visame" id="0:160"/>
+    </Artboard>
+
+    <ViewModel defaultInstanceId="0:110" name="ViewModel1" id="0:109">
+        <ViewModelPropertyBoolean name="isTalking" id="0:111"/>
+        <ViewModelPropertyNumber name="0" id="0:112"/>
+        <ViewModelPropertyNumber name="1" id="0:113"/>
+        <ViewModelPropertyNumber name="2" id="0:114"/>
+        <ViewModelPropertyNumber name="3" id="0:115"/>
+        <ViewModelPropertyNumber name="4" id="0:116"/>
+        <ViewModelPropertyNumber name="5" id="0:117"/>
+        <ViewModelPropertyNumber name="6" id="0:118"/>
+        <ViewModelPropertyNumber name="7" id="0:119"/>
+        <ViewModelPropertyNumber name="8" id="0:120"/>
+        <ViewModelPropertyNumber name="9" id="0:121"/>
+        <ViewModelPropertyNumber name="10" id="0:122"/>
+        <ViewModelPropertyNumber name="11" id="0:123"/>
+        <ViewModelPropertyNumber name="12" id="0:124"/>
+        <ViewModelPropertyNumber name="13" id="0:125"/>
+        <ViewModelPropertyNumber name="14" id="0:126"/>
+        <ViewModelPropertyNumber name="15" id="0:127"/>
+        <ViewModelPropertyNumber name="16" id="0:128"/>
+        <ViewModelPropertyNumber name="17" id="0:129"/>
+        <ViewModelPropertyNumber name="18" id="0:130"/>
+        <ViewModelPropertyNumber name="19" id="0:131"/>
+        <ViewModelPropertyNumber name="20" id="0:132"/>
+        <ViewModelPropertyNumber name="21" id="0:133"/>
+        <ViewModelInstance exports="true" name="Instance" id="0:110">
+            <ViewModelInstanceBoolean propertyValue="false" viewModelPropertyId="0:111" id="0:1209"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:112" id="0:1210"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:113" id="0:1211"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:114" id="0:1212"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:115" id="0:1213"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:116" id="0:1214"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:117" id="0:1215"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:118" id="0:1216"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:119" id="0:1217"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:120" id="0:1218"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:121" id="0:1219"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:122" id="0:1220"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:123" id="0:1221"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:124" id="0:1222"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:125" id="0:1223"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:126" id="0:1224"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:127" id="0:1225"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:128" id="0:1226"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:129" id="0:1227"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:130" id="0:1228"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:131" id="0:1229"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:132" id="0:1230"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:133" id="0:1231"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

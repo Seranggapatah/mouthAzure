@@ -1,0 +1,10 @@
+name: mouth_visame
+main: "Main"
+exclude:
+  - tools
+logs:
+  file: build/rive.log
+  problems: build/problems.log
+push:
+  projectId: 1586687
+  fileId: 2721678

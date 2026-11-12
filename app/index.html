@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mulut Bicara</title>
+<style>
+  :root {
+    --skin: #f3c9a8;
+    --skin-deep: #e9b78f;
+    --ink: #3a1620;
+    --ink-soft: #7a4a4f;
+    --lip: #c8505f;
+    --lip-deep: #a93c4c;
+    --paper: #fff8f1;
+    --line: #e3b594;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--skin);
+    color: var(--ink);
+    font: 16px/1.5 ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+  }
+  main {
+    width: min(100%, 980px);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: center;
+  }
+  .stage { text-align: center; }
+  canvas { width: 100%; aspect-ratio: 1; display: block; }
+  #viseme {
+    display: inline-block;
+    margin-top: -12px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    background: var(--skin-deep);
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+  .panel {
+    background: var(--paper);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px rgba(82, 20, 32, 0.45);
+  }
+  h1 { margin: 0 0 4px; font-size: 26px; line-height: 1.2; letter-spacing: -0.01em; }
+  .lede { margin: 0 0 16px; color: var(--ink-soft); font-size: 14px; }
+  textarea {
+    width: 100%;
+    min-height: 132px;
+    resize: vertical;
+    padding: 12px 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+  }
+  textarea:focus-visible, select:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid rgba(200, 80, 95, 0.4);
+    outline-offset: 1px;
+    border-color: var(--lip);
+  }
+  #samples { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 18px; }
+  #samples button {
+    padding: 4px 12px;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  #samples button:hover { border-color: var(--lip); color: var(--lip-deep); }
+  .field { display: grid; grid-template-columns: 92px minmax(0, 1fr) 44px; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 14px; }
+  .field output { text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  select {
+    grid-column: 2 / 4;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+    font-size: 14px;
+  }
+  input[type="range"] { width: 100%; accent-color: var(--lip); }
+  .check { display: flex; gap: 8px; align-items: center; margin: 4px 0 18px; font-size: 14px; color: var(--ink-soft); }
+  .check input { accent-color: var(--lip); width: 16px; height: 16px; }
+  .actions { display: flex; gap: 10px; }
+  .actions button {
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 14px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #speak { flex: 1; background: var(--lip); color: #fff; }
+  #speak:hover:not(:disabled) { background: var(--lip-deep); }
+  #stop { background: var(--skin-deep); color: var(--ink); }
+  .actions button:disabled { opacity: 0.45; cursor: default; }
+  #status { margin: 14px 0 0; min-height: 21px; font-size: 13px; color: var(--ink-soft); }
+  #status.error { color: #b3261e; }
+  kbd { font: inherit; font-size: 12px; padding: 1px 5px; border: 1px solid var(--line); border-radius: 5px; }
+  @media (max-width: 760px) {
+    main { grid-template-columns: 1fr; gap: 8px; }
+    .stage { max-width: 340px; margin: 0 auto; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="stage">
+    <canvas id="mouth" width="500" height="500" aria-label="Animasi mulut yang berbicara"></canvas>
+    <span id="viseme">viseme 0 · diam</span>
+  </section>
+
+  <section class="panel">
+    <h1>Mulut Bicara</h1>
+    <p class="lede">Ketik teks, lalu mulut Rive mengucapkannya. <kbd>⌘/Ctrl</kbd> + <kbd>Enter</kbd> untuk bicara.</p>
+
+    <textarea id="text" aria-label="Teks yang diucapkan" spellcheck="false">Halo! Nama saya Mulut. Saya bisa mengucapkan apa pun yang kamu ketik di sini.</textarea>
+
+    <div id="samples" aria-label="Contoh teks">
+      <button type="button" data-text="Selamat pagi, apa kabar hari ini?">Selamat pagi</button>
+      <button type="button" data-text="Papa membeli bubur ayam untuk mama.">Papa &amp; mama</button>
+      <button type="button" data-text="Ular melingkar-lingkar di atas pagar.">Ular melingkar</button>
+      <button type="button" data-text="Satu, dua, tiga, 45, 2026.">Angka</button>
+    </div>
+
+    <div class="field">
+      <label for="voice">Suara</label>
+      <select id="voice"><option value="">Suara bawaan browser</option></select>
+    </div>
+    <div class="field">
+      <label for="rate">Kecepatan</label>
+      <input id="rate" type="range" min="0.5" max="1.6" step="0.1" value="1">
+      <output id="rateOut" for="rate">1,0×</output>
+    </div>
+    <div class="field">
+      <label for="pitch">Nada</label>
+      <input id="pitch" type="range" min="0.5" max="1.8" step="0.1" value="1">
+      <output id="pitchOut" for="pitch">1,0</output>
+    </div>
+    <label class="check"><input id="mute" type="checkbox"> Tanpa suara (hanya gerak mulut)</label>
+
+    <div class="actions">
+      <button id="speak" type="button" disabled>Bicara</button>
+      <button id="stop" type="button" disabled>Stop</button>
+    </div>
+    <p id="status" role="status">Memuat…</p>
+  </section>
+</main>
+
+<script src="rive.js"></script>
+<script src="riv_data.js"></script>
+<script src="visemes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
